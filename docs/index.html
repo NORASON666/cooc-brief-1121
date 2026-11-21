@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>把指引帶進臺北教室</title>
-<meta name="description" content="2026-11-21 B3 數位教學指引儲備講師培訓工作坊試講：把《115 年中小學教師數位與 AI 教學指引》三個模組接到臺北教室與酷AI，用真實新聞看七大風險。">
+<title>臺北酷課雲｜局處長官簡報</title>
+<meta name="description" content="臺北酷課雲功能、服務與治理簡報">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -20,7 +20,6 @@ html,body{margin:0;height:100%;background:#E9EFF6;color:var(--ink);font-family:"
 .slide{position:absolute;inset:0;background:var(--paper);display:none;overflow:hidden;
   background-image:radial-gradient(circle at 1px 1px,#e3ecf6 1px,transparent 0);background-size:28px 28px}
 .slide.on{display:block}
-.slide:not(.t-cover):not(.t-closing):not(.t-divider)::after{content:"";position:absolute;right:60px;top:36px;width:360px;height:160px;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='360' height='160'><path d='M10 140 C 90 150 120 60 200 90 S 280 40 300 40' fill='none' stroke='%235AA9E6' stroke-width='3' stroke-dasharray='8 9'/><path d='M300 40 l52 -24 -18 50 -12 -16 z' fill='white' stroke='%231E3A6E' stroke-width='3' stroke-linejoin='round'/></svg>") no-repeat;opacity:.7;pointer-events:none}
 .slide::before{content:"";position:absolute;left:0;right:0;bottom:0;height:14px;background:linear-gradient(90deg,var(--sky),var(--pale) 60%,var(--orange))}
 .inner{position:absolute;inset:70px 120px 70px 120px;display:flex;flex-direction:column;z-index:1}
 .three .slide:not(.t-cover):not(.t-closing):not(.t-divider)::after{display:none}
@@ -177,7 +176,6 @@ ol.bul li::marker{font-weight:900;color:var(--blue)}
 #secchip{position:fixed;left:14px;top:12px;z-index:11;display:flex;gap:6px;padding:5px;background:rgba(255,255,255,.92);border:2px solid var(--navy);border-radius:22px;box-shadow:0 4px 14px rgba(30,58,110,.2)}
 #secchip button{font:700 15px "Noto Sans TC";border:none;background:#fff;color:var(--navy);border-radius:14px;padding:6px 12px;cursor:pointer}
 #secchip button.act{background:var(--orange);color:#fff}
-#secchip .g3btn{border-left:2px solid var(--line);border-radius:0 14px 14px 0}
 @media print{#secchip{display:none}}
 /* 酷AI 元素（取自 ailms.tp.edu.tw 首頁）：logo 膠囊、吉祥物插圖 */
 #tpbar{background:linear-gradient(90deg,#2BB5A8,#5CCFC2);border-radius:999px;padding:5px 16px 5px 12px;color:#fff}
@@ -192,34 +190,15 @@ ol.bul li::marker{font-weight:900;color:var(--blue)}
 #bar{transform:translateX(-50%) scale(.82)}#secchip{transform:scale(.82);transform-origin:top left}
 #bar:hover,#secchip:hover,body.uiwake #bar,body.uiwake #secchip{opacity:.95}
 body.uiidle #bar,body.uiidle #secchip{opacity:0;pointer-events:none}
-/* ── 三個模組三種視覺（共用酷AI／酷課雲元素：logo 膠囊、吉祥物、酷課雲標籤） */
-/* 模組一：航海（指引是一艘船）— 酷AI 青綠＋海浪 */
-.slide[data-sec=m1]{--navy:#0E4F5C;--ink:#16343b;--blue:#1E8F85;--sky:#5CCFC2;--pale:#D3F1EC;--orange:#F0A23B;--line:#B9E2DC;
-  background-color:#F5FCFB;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='60'><path d='M0 40 Q30 25 60 40 T120 40 T180 40 T240 40' fill='none' stroke='%23CDEFEA' stroke-width='3'/></svg>");background-size:240px 60px}
-.slide[data-sec=m1]::before{background:linear-gradient(90deg,#2BB5A8,#5CCFC2 55%,#F0A23B)}
-.slide[data-sec=m1] .slide .kicker,.slide[data-sec=m1] .kicker{background:#1E8F85}
-.slide[data-sec=m1] .tbl th:nth-child(3){background:#1E8F85}.slide[data-sec=m1] .tbl td:nth-child(3){background:#EFFAF8}
-/* 模組二：新聞編輯台（七大風險配新聞）— 報紙紙張＋朱紅 */
-.slide[data-sec=m2]{--navy:#2B2D42;--ink:#2B2D42;--blue:#C2410C;--sky:#F08A5D;--pale:#FDE3D8;--orange:#E85D3F;--line:#EBCFC3;
-  background-color:#FFFBF5;background-image:repeating-linear-gradient(0deg,transparent 0 33px,#F3E6D8 33px 34px)}
-.slide[data-sec=m2]::before{background:linear-gradient(90deg,#2B2D42 0 30%,#E85D3F 30% 70%,#2B2D42 70%)}
-.slide[data-sec=m2] .kicker{background:#2B2D42}.slide[data-sec=m2] .kicker::before{background:#E85D3F}
-.slide[data-sec=m2] .title span{background:linear-gradient(transparent 62%,#FDE3D8 62%)}
-.slide[data-sec=m2] .tbl th:nth-child(3){background:#E85D3F}.slide[data-sec=m2] .tbl td:nth-child(3){background:#FFF3EE}
-.slide[data-sec=m2] .card,.slide[data-sec=m2] .news,.slide[data-sec=m2] .steps li{border-radius:6px}
-/* 模組三：教室方格紙（AI 賦能教學）— 酷課雲藍紫＋方格 */
-.slide[data-sec=m3]{--navy:#33287A;--ink:#2a2550;--blue:#5B47B5;--sky:#8C7BE0;--pale:#E9E3FB;--orange:#F0A23B;--line:#D6CFF2;
-  background-color:#FBFAFF;background-image:linear-gradient(#EEEAFB 1px,transparent 1px),linear-gradient(90deg,#EEEAFB 1px,transparent 1px);background-size:40px 40px}
-.slide[data-sec=m3]::before{background:linear-gradient(90deg,#5B47B5,#8C7BE0 55%,#F0A23B)}
-.slide[data-sec=m3] .kicker{background:#5B47B5}
-.slide[data-sec=m3] .tbl th:nth-child(3){background:#7A5BD0}.slide[data-sec=m3] .tbl td:nth-child(3){background:#F5F2FE}
-/* 章節頁：大號模組編號浮水印＋「臺北酷課雲 × 酷AI」標籤 */
-.slide.t-divider .dvno{position:absolute;right:70px;top:-10px;font:900 360px/1 "Noto Sans TC";color:var(--pale);opacity:.9;z-index:0;pointer-events:none}
+/* 六個段落共用深藍基底，以段落色區分 */
+.slide[data-sec=s1]{--blue:#087e79;--sky:#28b4ab;--pale:#d9f3ef;--line:#b8dedb}
+.slide[data-sec=s2]{--blue:#1768a2;--sky:#55b8db;--pale:#dceefa;--line:#bed8e9}
+.slide[data-sec=s3]{--blue:#a85518;--sky:#db9655;--pale:#fae9d9;--line:#ead0b9}
+.slide[data-sec=s4]{--blue:#7050a0;--sky:#a78bd0;--pale:#eee8f8;--line:#d8cbea}
+.slide[data-sec=s5]{--blue:#4655a5;--sky:#8395dc;--pale:#e8ebfa;--line:#ccd2ed}
+.slide[data-sec=s6]{--blue:#957019;--sky:#d0ad50;--pale:#f7f0d9;--line:#e5d9ae}
+.slide.t-divider .dvno{position:absolute;left:0;bottom:0;font:900 280px/1 "Noto Sans TC";color:var(--blue);opacity:.09;pointer-events:none}
 .slide.t-divider .divider{position:relative;z-index:1}
-.cooc-chip{position:absolute;left:120px;top:60px;display:flex;align-items:center;gap:12px;font:900 24px "Noto Sans TC";color:#fff;background:linear-gradient(90deg,#2BB5A8,#5CCFC2);border-radius:999px;padding:8px 22px 8px 12px;z-index:2}
-.cooc-chip img{height:26px}
-.slide[data-sec=m2] .cooc-chip{background:linear-gradient(90deg,#2B2D42,#E85D3F)}
-.slide[data-sec=m3] .cooc-chip{background:linear-gradient(90deg,#5B47B5,#8C7BE0)}
 /* 右側配圖 */
 .wa{display:flex;gap:44px;height:100%;min-height:0}
 .wa-main{flex:1;min-width:0;display:flex;flex-direction:column}
@@ -334,6 +313,47 @@ body.uiidle #bar,body.uiidle #secchip{opacity:0;pointer-events:none}
 #zoom{position:fixed;inset:0;z-index:9999;background:rgba(10,20,45,.92);display:none;align-items:center;justify-content:center;cursor:zoom-out}
 #zoom.on{display:flex}
 #zoom img{max-width:96vw;max-height:96vh;object-fit:contain;border-radius:10px;background:#fff;box-shadow:0 10px 60px rgba(0,0,0,.5)}
+/* 局處簡報：深藍星系與清晰的投影排版 */
+.slide{--navy:#102f53;--ink:#263b50;background-image:none;background-color:#f7fafc}
+.slide .kicker{background:var(--blue)}
+.slide .title span{border-color:var(--blue);border-radius:0;background:linear-gradient(transparent 76%,var(--pale) 76%)}
+.t-cover,.t-closing{background:radial-gradient(ellipse at 70% 48%,#143f62 0%,#092744 42%,#061629 100%)}
+.cover{justify-content:flex-start;background:none}
+.cover-text{margin-left:140px;max-width:830px;text-align:left;background:linear-gradient(110deg,rgba(5,22,41,.94),rgba(5,22,41,.70));border:1px solid rgba(124,211,238,.35);border-radius:24px;box-shadow:0 24px 90px #031020;padding:58px 64px}
+.cover-text::before{left:64px;right:auto;width:120px;background:#52d4d3}
+.cover .org,.cover .hand{color:#85e1e0}.cover h1,.cover .meta,.cover .who{color:#fff}
+.cover h1{font-size:102px}.cover h1 mark{background:none;border-color:#55cdd4}.cover .who{justify-content:flex-start}
+.galaxy-canvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}
+.t-divider{background:linear-gradient(120deg,#f7fbfd 0%,#eef6fa 60%,#dae9f1 100%)}
+.t-divider .galaxy-canvas{opacity:.3}.dv-text{min-width:0}.dv-title{font-size:86px;line-height:1.2}.dv-sub{font-size:39px;line-height:1.5;border-color:var(--blue)}
+.dv-ill{width:760px;height:690px}.dv-ill .ill{transform:none;mix-blend-mode:normal;border:1px solid #aabfd1!important;border-radius:18px!important;box-shadow:0 18px 50px #163a572b!important}
+.navgrid{gap:24px}.navcard{padding:24px 30px 48px;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 26px #173e5712;gap:6px}
+.navcard:nth-child(1){--nav-color:#087e79}.navcard:nth-child(2){--nav-color:#1768a2}.navcard:nth-child(3){--nav-color:#a85518}.navcard:nth-child(4){--nav-color:#7050a0}.navcard:nth-child(5){--nav-color:#4655a5}.navcard:nth-child(6){--nav-color:#957019}
+.navcard:nth-child(4)::after{content:'04'}.navcard:nth-child(5)::after{content:'05'}.navcard:nth-child(6)::after{content:'06'}
+.nv-t{font-size:43px}.nv-k{font-size:23px}.nv-m,.nv-d{font-size:27px}.nv-go{font-size:23px;bottom:14px}
+.card{border:1px solid var(--line);border-top:6px solid var(--blue);border-radius:18px;box-shadow:0 12px 30px #173e5714;padding:25px 30px}
+.t-cards .cards{gap:22px}.t-cards .card h3{font-size:37px;line-height:1.25}.t-cards .card p{font-size:30px;line-height:1.4}.t-cards .card .note{font-size:29px;line-height:1.35;color:var(--blue);margin-top:12px}
+.t-cards .c3 .card .note{font-size:31px;font-weight:900}.card-badge{display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;border-radius:50%;background:var(--blue);color:white;font-size:30px;margin-right:12px;vertical-align:3px}
+.t-flow .card h3{font-size:40px}.t-flow .card p{font-size:32px}.arrows .card:not(:last-child)::after{color:var(--blue)}
+.steps li{border:1px solid var(--line);border-left:7px solid var(--blue);border-radius:16px;box-shadow:0 8px 24px #173e5714;font-size:40px;line-height:1.4}.steps .num{background:var(--blue)}
+.tbl{font-size:31px;line-height:1.35;border:1px solid var(--line);border-radius:14px}.tbl th{font-size:32px;padding:15px;background:var(--navy)}.tbl td{height:auto;padding:16px;border-top:1px solid #dfe8ef}.tbl th:nth-child(3){background:var(--navy)}.tbl td:nth-child(3){background:transparent}.tbl tbody tr:nth-child(even) td{background:#f1f6fa}.tbl .up{color:#087d5b;font-weight:900}.tbl .down{color:#b23939;font-weight:900}
+.t-table .foot{font-size:31px;margin-top:18px}.t-table .src{font-size:20px}
+.shot.two figure img,.st-img img{border:1px solid #aabfd1;border-radius:12px;box-shadow:0 16px 38px #173e572b;filter:none;background:#fff}.shot.two figcaption{font-size:28px;line-height:1.35}.st-text p{font-size:34px;line-height:1.5}.st-img{flex:1.25}
+.gx{display:grid;grid-template-columns:1fr 720px;gap:35px;align-items:center;flex:1;min-height:0}.gx-rings{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:ring}.gx-rings li{position:relative;display:flex;flex-direction:column;padding:16px 22px 16px 88px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 7px 22px #123b5010;min-height:112px;justify-content:center}.gx-rings li:before{counter-increment:ring;content:'0' counter(ring);position:absolute;left:19px;top:25px;width:49px;height:49px;border:3px double var(--blue);border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:20px;color:var(--blue)}.gx-rings b{font-size:32px;color:var(--blue)}.gx-rings span{font-size:28px;line-height:1.35}
+.gx-stage{position:relative;width:720px;height:530px;border-radius:24px;overflow:hidden;background:radial-gradient(ellipse at center,#174765,#092039 75%);box-shadow:0 18px 45px #0b315a30}.gx-fallback{height:100%;padding:36px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-content:center}.gx-core{grid-column:1/-1;text-align:center;font-size:37px;font-weight:900;color:#a4f2ee;padding:18px}.gx-node,.gx-label,.gx-center-label{color:#fff;font-size:26px;font-weight:700;text-align:center;background:#173d59;border:1px solid #78cdd2;border-radius:10px;padding:9px 12px}.gx-labels{display:none;position:absolute;inset:0;pointer-events:none}.webgl-ready .gx-fallback{display:none}.webgl-ready .gx-labels{display:block}.gx-label,.gx-center-label{position:absolute;transform:translate(-50%,-50%);white-space:nowrap;box-shadow:0 4px 14px #05142490}.gx-center-label{left:50%;top:50%;background:#0c3a50;color:#c8ffff;font-size:29px;z-index:2}.gx-label{font-size:28px;padding:7px 10px}
+.t-galaxy .foot{font-size:30px;margin-top:12px;padding:10px 20px}
+@media (prefers-reduced-motion:no-preference){@keyframes hit{0%{opacity:0;transform:scale(1.045) translateY(14px);filter:blur(5px)}100%{opacity:1;transform:none;filter:none}}@keyframes pop{0%{opacity:0;transform:translateY(18px) scale(.97)}100%{opacity:1;transform:none}}@keyframes smash{0%{opacity:0;transform:scale(1.08);filter:blur(3px)}100%{opacity:1;transform:none;filter:none}}@keyframes flash2{0%{opacity:.28}100%{opacity:0}}}
+
+
+/* Claude 驗收微調 2026-11-21：卡片不要撐滿留白、表格與來源字放大 */
+.t-flow .cards,.t-cards .cards.c3:not(:has(.card:nth-child(4))){grid-auto-rows:auto;align-content:center}
+.t-flow .card,.t-cards .cards.c3:not(:has(.card:nth-child(4))) .card{justify-content:flex-start;min-height:420px;padding-top:40px}
+.t-flow .card .num{width:72px;height:72px;font-size:40px}
+.t-cards .cards.c3:not(:has(.card:nth-child(4))) .card h3{font-size:40px;margin-bottom:10px}
+.t-cards .cards.c3:not(:has(.card:nth-child(4))) .card p{font-size:32px}
+.t-cards .cards.c3:not(:has(.card:nth-child(4))) .card .note{font-size:31px;margin-top:auto;padding-top:20px;border-top:2px dashed var(--line)}
+.t-table .tbl{font-size:34px}.t-table .tbl th{font-size:34px;padding:20px}.t-table .tbl td{padding:24px 20px}
+.srcs{font-size:34px}
 </style>
 </head>
 <body>
@@ -353,19 +373,19 @@ body.uiidle #bar,body.uiidle #secchip{opacity:0;pointer-events:none}
 <section class="slide t-divider" id="p8" data-label="8" data-sec="s2"><div class="inner"><div class="divider"><div class="dv-text"><div class="kicker big">02｜六大服務</div>
 <h2 class="dv-title">學、看、讀、上課、AI、資源</h2><div class="dv-sub">六個服務，各有一個數字</div></div>
 <div class="dv-ill"><img class="ill" style="height:auto;border-radius:24px;box-shadow:0 12px 40px rgba(30,58,110,.18)" src="assets/shots/coocplus.png" alt=""></div></div></div><div class="pno">8</div></section>
-<section class="slide t-cards" id="p9" data-label="9" data-sec="s2"><div class="inner"><div class="kicker">02｜六大服務</div><h2 class="title"><span>六大服務一覽</span></h2><div class="cards c3"><div class="card"><h3>① 入口與身分</h3><p>單一身分驗證登入、親子綁定、酷課 App</p><div class=note>147 萬註冊帳號；115 年入口訪問 2,566 萬次（+12.7%）</div></div><div class="card"><h3>② CooC+ 影音串流</h3><p>像追劇一樣學；AI 學習助理「問我蛙」</p><div class=note>5,281 支影片；115 年 106 萬瀏覽人次（+14.0%）</div></div><div class="card"><h3>③ 酷AI 學習系統</h3><p>個人化推薦、AI 助教、學習診斷、口說與臺語</p><div class=note>361 場教師研習；115 年 36.4 萬人次（+5.8%）</div></div><div class="card"><h3>④ 酷課OnO 線上教室</h3><p>直播、跨校選修、大學體驗課程、教師e學苑</p><div class=note>115 年總訪問 574 萬次</div></div><div class="card"><h3>⑤ 深耕閱讀酷</h3><p>115 年新建的閱讀平臺，接替酷課閱讀</p><div class=note>已匯入閱讀影音 2,592 支、電子書 329 本</div></div><div class="card"><h3>⑥ 主題與合作資源</h3><p>科技、特教、雙語、本土語、幼教專區；Hahow；YouTube</p><div class=note>YouTube 115 年觀看 543 萬次</div></div></div><p class="src">資料來源｜115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）；cooc.tp.edu.tw；深耕閱讀酷後台（2026-11-10）</p></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">9</div></section>
+<section class="slide t-cards" id="p9" data-label="9" data-sec="s2"><div class="inner"><div class="kicker">02｜六大服務</div><h2 class="title"><span>六大服務一覽</span></h2><div class="cards c3"><div class="card"><h3><span class="card-badge">①</span>入口與身分</h3><p>單一身分驗證登入、親子綁定、酷課 App</p><div class=note>147 萬註冊帳號；115 年入口訪問 2,566 萬次（+12.7%）</div></div><div class="card"><h3><span class="card-badge">②</span>CooC+ 影音串流</h3><p>像追劇一樣學；AI 學習助理「問我蛙」</p><div class=note>5,281 支影片；115 年 106 萬瀏覽人次（+14.0%）</div></div><div class="card"><h3><span class="card-badge">③</span>酷AI 學習系統</h3><p>個人化推薦、AI 助教、學習診斷、口說與臺語</p><div class=note>361 場教師研習；115 年 36.4 萬人次（+5.8%）</div></div><div class="card"><h3><span class="card-badge">④</span>酷課OnO 線上教室</h3><p>直播、跨校選修、大學體驗課程、教師e學苑</p><div class=note>115 年總訪問 574 萬次</div></div><div class="card"><h3><span class="card-badge">⑤</span>深耕閱讀酷</h3><p>115 年新建的閱讀平臺，接替酷課閱讀</p><div class=note>已匯入閱讀影音 2,592 支、電子書 329 本</div></div><div class="card"><h3><span class="card-badge">⑥</span>主題與合作資源</h3><p>科技、特教、雙語、本土語、幼教專區；Hahow；YouTube</p><div class=note>YouTube 115 年觀看 543 萬次</div></div></div><p class="src">資料來源｜115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）；cooc.tp.edu.tw；深耕閱讀酷後台（2026-11-10）</p></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">9</div></section>
 <section class="slide t-compare" id="p10" data-label="10" data-sec="s2"><div class="inner"><div class="kicker">02｜六大服務</div><h2 class="title"><span>看得到的服務：影音與線上教室</span></h2><div class="shot two"><figure><img src="assets/shots/coocplus.png" alt=""><figcaption>CooC+：分科影音、熱門課程、右下角 AI 助理「問我蛙」</figcaption></figure><figure><img src="assets/shots/ono.png" alt=""><figcaption>酷課OnO：大學體驗課程、寒暑假自主學習活動</figcaption></figure></div><p class="src">資料來源｜coocplus.tp.edu.tw、ono.tp.edu.tw（2026-11-21 截圖）</p></div><div class="pno">10</div></section>
 <section class="slide t-shotText" id="p11" data-label="11" data-sec="s2"><div class="inner"><div class="kicker">02｜六大服務</div><h2 class="title"><span>酷AI：從統一進度，走向個人化學習</span></h2><div class="st"><div class="st-img"><img src="assets/shots/kuai_06.png" alt=""></div><div class="st-text"><p><b>智慧推薦影片</b>：找出弱點，推薦最適合的影片</p><p><b>個人化練習</b>：AI 自動出題，針對弱點反覆練習</p><p><b>互動式影片</b>：影片中嵌入問題，被動看變主動學</p><p>另有學習診斷、英語口說、臺語、Scratch 即時批改</p></div></div><p class="src">資料來源｜2026 酷AI 系統新增功能介紹（臺北市政府教育局）</p></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">11</div></section>
 <section class="slide t-divider" id="p12" data-label="12" data-sec="s3"><div class="inner"><div class="divider"><div class="dv-text"><div class="kicker big">03｜使用者價值</div>
 <h2 class="dv-title">對學生、老師、家長、學校各有什麼好處</h2><div class="dv-sub">同一個平臺，四種角色各取所需</div></div>
-<div class="dv-ill"><img class="ill" style="height:auto;border-radius:24px;box-shadow:0 12px 40px rgba(30,58,110,.18)" src="assets/shots/kuai_09.png" alt=""></div></div></div><div class="pno">12</div></section>
+<div class="dv-ill"><img class="ill" style="height:auto;border-radius:24px;box-shadow:0 12px 40px rgba(30,58,110,.18)" src="assets/shots/ono.png" alt=""></div></div></div><div class="pno">12</div></section>
 <section class="slide t-table" id="p13" data-label="13" data-sec="s3"><div class="inner"><div class="kicker">03｜使用者價值</div><h2 class="title"><span>四種角色，各自得到什麼</span></h2><table class="tbl"><thead><tr><th>角色</th><th>得到什麼</th><th>對應服務</th></tr></thead><tbody><tr><td>學生</td><td>隨時能學：影片、練習、AI 即時解答；弱點有人（AI）幫忙補</td><td>CooC+、酷AI、OnO</td></tr><tr><td>教師</td><td>備課素材現成；AI 出題與學習診斷，少花時間批改、多花時間教學</td><td>酷AI 教師端、CooC+、教師e學苑</td></tr><tr><td>家長</td><td>親子綁定看得到孩子的學習；假期有自主學習活動可參加</td><td>親子綁定、OnO 活動、Hahow</td></tr><tr><td>學校</td><td>不用各自採購平臺；帳號與學籍由市府統一處理</td><td>單一身分驗證、中介資料庫</td></tr></tbody></table></div><div class="pno">13</div></section>
 <section class="slide t-stats" id="p14" data-label="14" data-sec="s3"><div class="inner"><div class="kicker">03｜使用者價值</div><h2 class="title"><span>有沒有用？研究看得到效果</span></h2><div class="cards c3"><div class="card stat"><div class="big">+16.42 分</div><h3>113 年單組前後測</h3><p>國北教大，六年級，p&lt;.001</p></div><div class="card stat"><div class="big">p＝.046</div><h3>114 年準實驗研究</h3><p>5 校 12 班 243 人，數學成效顯著</p></div><div class="card stat"><div class="big">77 萬</div><h3>酷AI 累計學習人次</h3><p>2026-01 跨縣市記者會公布</p></div></div><p class="foot">114 年研究：數學顯著；學習動機等情意面向未達顯著</p></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">14</div></section>
 <section class="slide t-divider" id="p15" data-label="15" data-sec="s4"><div class="inner"><div class="divider"><div class="dv-text"><div class="kicker big">04｜平臺整合效益</div>
 <h2 class="dv-title">為什麼要整合在一朵雲上</h2><div class="dv-sub">帳號、資料、資安、維運，一次到位</div></div>
 <div class="dv-ill"><img class="ill" style="height:auto;border-radius:24px;box-shadow:0 12px 40px rgba(30,58,110,.18)" src="assets/shots/cooc_stats.png" alt=""></div></div></div><div class="pno">15</div></section>
 <section class="slide t-cards" id="p16" data-label="16" data-sec="s4"><div class="inner"><div class="kicker">04｜平臺整合效益</div><h2 class="title"><span>分散 vs. 整合</span></h2><div class="cards c2"><div class="card"><h3>一個帳號</h3><p>學生老師不必記多組帳密；新平臺上線直接用單一身分驗證</p><div class=note>分散：每個平臺各一組帳號，轉學、畢業各自處理</div></div><div class="card"><h3>一份學籍</h3><p>班級、年級由中介資料庫統一提供，平臺不必各自建檔</p><div class=note>分散：每家廠商各自匯入名單，資料不一致</div></div><div class="card"><h3>一套資安管理</h3><p>系統變更走正式申請；弱點通報時全平臺一起盤點修補</p><div class=note>實例：115/10 PHP 弱點，各平臺於期限內盤點修補</div></div><div class="card"><h3>一個統籌單位</h3><p>數位學習中心統籌各平臺廠商，每週聯席會議管考</p><div class=note>老舊系統主動汰換：酷課閱讀暫停，由深耕閱讀酷接替</div></div></div></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">16</div></section>
-<section class="slide t-table" id="p17" data-label="17" data-sec="s4"><div class="inner"><div class="kicker">04｜平臺整合效益</div><h2 class="title"><span>今年跟去年比：多數平臺成長</span></h2><table class="tbl"><thead><tr><th>平臺</th><th>115 年（1/1～11/1）</th><th>114 年同期</th><th>增減</th></tr></thead><tbody><tr><td>酷課雲入口（總訪問量）</td><td>25,663,760</td><td>22,766,815</td><td>＋12.7%</td></tr><tr><td>CooC+（總訪問量）</td><td>1,063,186</td><td>932,421</td><td>＋14.0%</td></tr><tr><td>酷AI（瀏覽人次）</td><td>363,925</td><td>343,912</td><td>＋5.8%</td></tr><tr><td>YouTube（觀看次數）</td><td>5,432,214</td><td>4,968,837</td><td>＋9.3%</td></tr><tr><td>酷課OnO（總訪問量）</td><td>5,742,854</td><td>10,400,201</td><td>−44.8%</td></tr><tr><td>合計</td><td>38,265,939</td><td>39,412,186</td><td>−2.9%</td></tr></tbody></table><p class="foot">OnO 減少主因：114 年 3 月單月 359.9 萬次，墊高去年基期</p><p class="src">資料來源｜115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）</p></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">17</div></section>
+<section class="slide t-table" id="p17" data-label="17" data-sec="s4"><div class="inner"><div class="kicker">04｜平臺整合效益</div><h2 class="title"><span>今年跟去年比：多數平臺成長</span></h2><table class="tbl"><thead><tr><th>平臺</th><th>115 年（1/1～11/1）</th><th>114 年同期</th><th>增減</th></tr></thead><tbody><tr><td>酷課雲入口（總訪問量）</td><td>25,663,760</td><td>22,766,815</td><td class="up">＋12.7%</td></tr><tr><td>CooC+（總訪問量）</td><td>1,063,186</td><td>932,421</td><td class="up">＋14.0%</td></tr><tr><td>酷AI（瀏覽人次）</td><td>363,925</td><td>343,912</td><td class="up">＋5.8%</td></tr><tr><td>YouTube（觀看次數）</td><td>5,432,214</td><td>4,968,837</td><td class="up">＋9.3%</td></tr><tr><td>酷課OnO（總訪問量）</td><td>5,742,854</td><td>10,400,201</td><td class="down">−44.8%</td></tr><tr><td>合計</td><td>38,265,939</td><td>39,412,186</td><td class="down">−2.9%</td></tr></tbody></table><p class="foot">OnO 減少主因：114 年 3 月單月 359.9 萬次，墊高去年基期</p><p class="src">資料來源｜115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）</p></div><button class="supbtn" title="補充資料（S）">📎 補充（1 則）</button><div class="pno">17</div></section>
 <section class="slide t-divider" id="p18" data-label="18" data-sec="s5"><div class="inner"><div class="divider"><div class="dv-text"><div class="kicker big">05｜資料與 AI</div>
 <h2 class="dv-title">從學習紀錄，到個人化與決策</h2><div class="dv-sub">資料是 AI 的燃料；平臺整合才有資料</div></div>
 <div class="dv-ill"><img class="ill" style="height:auto;border-radius:24px;box-shadow:0 12px 40px rgba(30,58,110,.18)" src="assets/shots/kuai_09.png" alt=""></div></div></div><div class="pno">18</div></section>
@@ -396,7 +416,7 @@ body.uiidle #bar,body.uiidle #secchip{opacity:0;pointer-events:none}
 <div id="timerBadge" title="點一下打開計時設定"><span id="tLeft">05:00</span><span class="bar"><i id="tBar"></i></span></div>
 <div id="edgeGlow"></div>
 <div id="timesUp">時間到！</div>
-<nav id="secchip"><button data-go="nav">導覽 H</button><button data-go="m1">模組一 1</button><button data-go="m2">模組二 2</button><button data-go="m3">模組三 3</button><button data-href="g3.html" class="g3btn">上午報告 第三組</button></nav>
+<nav id="secchip"><button data-go="nav">導覽 H</button><button data-go="s1">版圖 1</button><button data-go="s2">服務 2</button><button data-go="s3">價值 3</button><button data-go="s4">整合 4</button><button data-go="s5">資料 5</button><button data-go="s6">治理 6</button></nav>
 <nav id="bar"><button id="bPrev">◀</button><button id="bTimer">⏱ 計時 T</button><button id="bGrid">總覽 O</button><button id="bSup">補充 S</button><button id="bNotes">講稿 N</button><button id="bFull">全螢幕 F</button><button id="bNext">▶</button></nav>
 <script>
 const SIDE=[{"n": "1", "notes": "各位長官好。今天用六段跟長官報告臺北酷課雲：先看功能版圖，再看六大服務、它對學生老師家長的價值、平臺整合帶來的效益，接著是資料與 AI，最後從治理的角度談下一步。", "sup": ""}, {"n": "2", "notes": "這是今天的六段。每段兩到三頁，總共約 15 分鐘。", "sup": ""}, {"n": "3", "notes": "先講三個數字。各平臺累計瀏覽已經超過 5 億次；註冊帳號 147 萬；今年到 11 月 1 日，各平臺合計 3,827 萬次瀏覽。酷課雲 105 年 8 月上線，今年是第 10 年。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">數據來源</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>三個數字怎麼來</h4><ul><li>5.05 億＝聯席會議紀錄表1「各平臺累計總次數」505,327,372（酷課雲總訪問量＋OnO 總訪問量＋YouTube 觀看次數＋CooC+ 總訪問量＋酷AI 瀏覽人次；不計 OnO 瀏覽人次）</li><li>3,827 萬＝同表「115 年小計」38,265,939（114 年同期 39,412,186）</li><li>147 萬＝酷課雲首頁「酷課雲使用數據」註冊帳號數 1,470,937（不含酷AI、OnO、YouTube）</li><li>上線日期：105 年 8 月 15 日（歷年建置案實施計畫「現行業務狀況」）</li></ul><p class=\"sup-src\">115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）</p></article>"}, {"n": "4", "notes": "第一段，功能版圖。", "sup": ""}, {"n": "5", "notes": "酷課雲不是單一網站，是四層結構。最外面是入口與身分：臺北市單一身分驗證、家長的親子綁定。中間是六大服務。底下是資料層：學籍走中介資料庫、各平臺有學習紀錄與統計。最下面是治理層：數位學習中心統籌，每週聯席會議管考，系統變更要走資安變更管制。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">說明</span><span class=\"ev ev-中心歸納\">中心歸納</span></div>\n<h4>這張圖怎麼分</h4><ul><li>四層與「六大服務」是數位學習中心依現行平臺歸納的分類，供本次簡報使用，不是既有的正式名稱</li><li>單一身分驗證：酷課雲各平臺以臺北市單一身分驗證登入（OAuth）</li><li>聯席會議：臺北市數位學習聯席會議每週召開，各平臺量化成效每次列表報告</li></ul><p class=\"sup-src\"></p></article>"}, {"n": "6", "notes": "這是酷課雲現在的首頁。精選平臺有 CooC+、教育部因材網、OnO 線上課程、臺北教師e學苑；主題學習有科技教育、特教、雙語、幼教、本土語等專區；也接了 Hahow 這類外部課程。家長可以用親子綁定連到孩子的帳號。", "sup": ""}, {"n": "7", "notes": "今年 10 月 16 日起，臺北酷課雲列入教育部 A2 數位學習平臺推薦名單，效期到 118 年底，和因材網、酷英並列。教育部的教學指引建議老師優先用名單上的平臺，等於中央認可了臺北自建的平臺。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">官方資料</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>A2 數位學習平臺推薦名單</h4><ul><li>教育部因材網、Cool English、PaGamO、加分吧、HiTeach：115.09.01–118.12.31</li><li>臺北酷課雲、Yory 優歷：115.10.16–118.12.31</li><li>頁面用詞是「推薦」，不是「認證」；名單上列的是「臺北酷課雲」</li></ul><p class=\"sup-src\">教育部 AI 人才方舟計畫－數位學習輔導團隊 <a href=\"https://pads.moe.edu.tw/teacher_list.php\" target=\"_blank\" rel=\"noopener\">原文</a></p></article>"}, {"n": "8", "notes": "第二段，六大服務。", "sup": ""}, {"n": "9", "notes": "六大服務各一個數字。入口今年訪問 2,566 萬次、比去年同期多 12.7%。CooC+ 有 5,281 支影片，今年瀏覽人次 106 萬、成長 14%。酷AI 中心辦了 361 場教師研習，今年 36 萬人次。OnO 線上教室今年訪問 574 萬次。深耕閱讀酷是今年新建、接替酷課閱讀的平臺。最後是主題專區與外部合作，YouTube 今年 543 萬次觀看。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">數據來源</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>各服務數字出處（115 年＝1/1～11/1，括號為與 114 年同期比）</h4><ul><li>酷課雲總訪問量 25,663,760（114 同期 22,766,815，+12.7%）</li><li>CooC+ 總訪問量 1,063,186（932,421，+14.0%）；影片 5,281 支，其中新課綱動畫 2,310 支與均一合作</li><li>酷AI 瀏覽人次 363,925（343,912，+5.8%）；研習 361 場、培訓講師回報 9,269 位教師（截至 10/25）</li><li>OnO 總訪問量 5,742,854（10,400,201，−44.8%；114 年 3 月單月 359.9 萬墊高去年基期）</li><li>YouTube 觀看次數 5,432,214（4,968,837，+9.3%）</li><li>深耕閱讀酷：2026-11-10 成果展示上傳閱讀推動影音 2,592 筆、酷課閱讀電子書 329 本（中心實測）</li></ul><p class=\"sup-src\">115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）</p></article>"}, {"n": "10", "notes": "左邊是 CooC+，分科目的影音，右下角那隻青蛙是 AI 學習助理問我蛙。右邊是 OnO 線上教室，有大學體驗課程和寒暑假的自主學習活動。", "sup": ""}, {"n": "11", "notes": "酷AI 是酷課雲裡的 AI 學習系統。核心是三件事：找出學生弱點推薦影片、AI 出個人化練習題、互動式影片。另外還有學習診斷報表、英語口說、臺語語音、Scratch 即時批改。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">官方資料</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>酷AI 功能（2026 新增功能介紹 v4）</h4><ul><li>學生端：學習推薦 → 即時解答 → AI 小幫手</li><li>教師端：AI 預測輔助、接收推薦評量、學生學習診斷報表</li><li>大聲說臺語（AI 臺語語音）、大聲說英語（AI 口說練習）、Scratch 智慧即時批改</li></ul><p class=\"sup-src\"></p></article>"}, {"n": "12", "notes": "第三段，使用者價值。", "sup": ""}, {"n": "13", "notes": "四種角色。學生隨時能學，弱點有 AI 幫忙補。老師備課素材現成，AI 出題、學習診斷，省下批改的時間。家長用親子綁定看到孩子的學習。學校不用各自採購平臺，帳號學籍由市府統一處理。", "sup": ""}, {"n": "14", "notes": "效果有研究可以看。113 年國北教大的單組前後測，六年級平均進步 16.42 分。114 年做了有控制組的準實驗，5 校 12 班 243 人，數學成效達顯著。要誠實補一句：情意面向，也就是學習動機，沒有達到顯著。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">研究</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>兩份成效研究</h4><ul><li>114 陳建志酷AI成效評估研究案：2025/8–2026/1，準實驗前後測控制組，5 校 12 班 243 人；數學 F=4.017，p=.046；情意未顯著；結案報告 2026-03-03</li><li>113 年度：國北教大單組前後測，六年級，+16.42 分，p&lt;.001（單組設計，無對照組）</li><li>77 萬人次：2026-01-26 酷AI 教學手冊發布暨跨縣市合作簽署記者會</li></ul><div class=\"lm\"><b>研究限制・引用提醒</b><ul><li>113 年是單組前後測，不能排除自然成長</li><li>114 年只有數學顯著；不要說成「全面提升」</li></ul></div><p class=\"sup-src\"></p></article>"}, {"n": "15", "notes": "第四段，平臺整合的效益。", "sup": ""}, {"n": "16", "notes": "整合的效益有四個。一個帳號：新平臺直接用單一身分驗證。一份學籍：班級年級由中介資料庫統一提供。一套資安管理：系統變更走正式申請，今年 10 月 PHP 弱點通報時，各平臺一起盤點、在期限內修補。一個統籌單位：數位學習中心統籌各家廠商，每週聯席會議管考；老舊系統也會主動汰換，像酷課閱讀暫停服務、由新建的深耕閱讀酷接替。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">說明</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>整合的實例</h4><ul><li>資安變更管制：系統更新須先提正式變更申請（第 26 次聯席會議 115/9/1 決議）</li><li>115/10 PHP 重大弱點通報：各平臺依教育局系統清單盤點、修補並回報</li><li>酷課閱讀：因系統老舊、資安維護需要自 115/10/22 起暫停服務；由 115 年建置的「深耕閱讀酷」接替</li></ul><p class=\"sup-src\"></p></article>"}, {"n": "17", "notes": "今年跟去年同期比。入口成長 12.7%、CooC+ 14%、酷AI 5.8%、YouTube 9.3%。OnO 少了 45%，主要是去年 3 月單月衝到 360 萬次，墊高了基期，所以合計比去年少 2.9%。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">數據來源</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>OnO 的落差</h4><ul><li>114/3 OnO 總訪問量 3,599,252；115/3 為 846,559</li><li>扣除 3 月，OnO 其餘月份 115 年仍低於 114 年同期；原因〔待確認〕，報告時建議只陳述數字</li></ul><p class=\"sup-src\">115 年第 33 次臺北市數位學習聯席會議紀錄 表1（統計至 115/11/1）</p></article>"}, {"n": "18", "notes": "第五段，資料與 AI。", "sup": ""}, {"n": "19", "notes": "資料變成價值分四步。蒐集：學生看影片、作答的紀錄。診斷：酷AI 找出知識點弱點、產出診斷報表。推薦：推影片和練習題給學生，也推評量給老師。最後是決策：彙整成跨平臺的指標，給學校和局端參考。前三步已經在酷AI 裡運作，第四步是接下來要做的。", "sup": ""}, {"n": "20", "notes": "AI 延伸有三個方向。已上線的是 AI 學習：酷AI、CooC+ 的問我蛙，而且已經開放三個縣市共享。建置中的是把 AI 嵌入各平臺，例如深耕閱讀酷要串接酷AI 學習紀錄。規劃中的是 AI 治理：今年跨科室整理出 19 項教育治理指標、做了 16 支儀表板雛型；中心也有自建的 GPU 推論主機，敏感資料可以不離開市府。", "sup": "<article class=\"sup\"><div class=\"sup-k\"><span class=\"kind\">說明</span><span class=\"ev ev-正式文件\">正式文件</span></div>\n<h4>三個方向的依據</h4><ul><li>跨縣市共享：2026-01-26 與連江、雲林、澎湖簽署 MOU</li><li>深耕閱讀酷：115 智慧閱讀平臺建置案，作業規範要求同步酷AI 學習紀錄（驗收中，尚未完成）</li><li>教育治理指標：115 年數位發展部輔導案，10 場跨科室會議、11 科室、19 項指標、16 支儀表板 POC</li><li>GPU 推論主機：數位學習中心自行維運，執行開源大型語言模型</li></ul><p class=\"sup-src\"></p></article>"}, {"n": "21", "notes": "最後一段，從長官的角度看酷課雲。", "sup": ""}, {"n": "22", "notes": "長官可能關心五件事。有沒有效：用量多數成長，酷AI 有研究證據。公平嗎：免費、全市共用，也開放給離島偏鄉縣市。安全嗎：變更要正式申請，弱點通報時全平臺一起修，老系統會主動汰換。能永續嗎：全市一套平臺，學校不必各自採購，而且已經進入教育部推薦名單。下一步：把各平臺數據整合成治理儀表板。", "sup": ""}, {"n": "23", "notes": "最後提三個建議。第一，唯一入口：新的學習系統一律接單一身分驗證、掛在酷課雲上。第二，一張儀表板：各平臺的用量與成效整合成跨平臺指標，按月提供給長官。第三，AI 從學習走到治理：用酷AI 累積的經驗，擴大到閱讀、評量和決策支援。以上是中心的建議，請長官指導。", "sup": ""}, {"n": "24", "notes": "報告到這裡，謝謝長官。", "sup": ""}, {"n": "25", "notes": "", "sup": ""}];
@@ -466,19 +486,14 @@ function goSec(g){const k=g==='nav'?slides.findIndex(s=>s.classList.contains('t-
 document.addEventListener('click',e=>{const h=e.target.closest('[data-href]');if(h){e.stopPropagation();location.href=h.dataset.href;}});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b){e.stopPropagation();goSec(b.dataset.go);}});
 addEventListener('keydown',e=>{if(e.target.closest&&e.target.closest('input,textarea'))return;const k=e.key;
-  if(k==='h'||k==='H')goSec('nav');else if(k==='1')goSec('m1');else if(k==='2')goSec('m2');else if(k==='3')goSec('m3');});
-const _show=show;show=function(i){const d=document.getElementById('deck');d.classList.remove('flash');void d.offsetWidth;d.classList.add('flash');_show(i);const s=slides[cur].dataset.sec;document.querySelectorAll('#secchip button').forEach(b=>b.classList.toggle('act',b.dataset.go===s));};
-document.querySelectorAll('.slide').forEach(sl=>{const k=document.createElement('img');k.className='kscene';k.src='assets/shots/kuai_scene.png';k.alt='';sl.appendChild(k);
-  if(/t-(cover|closing)/.test(sl.className)){const l=document.createElement('img');l.className='klogo';l.src='assets/shots/kuai_logo.png';l.alt='酷AI系統';sl.appendChild(l);}});
-
+  if(k==='h'||k==='H')goSec('nav');else if(/^[1-6]$/.test(k))goSec('s'+k);});
+const _show=show;show=function(i){const d=document.getElementById('deck');d.classList.remove('flash');void d.offsetWidth;d.classList.add('flash');_show(i);const s=slides[cur].dataset.sec;document.querySelectorAll('#secchip button').forEach(b=>b.classList.toggle('act',b.dataset.go===s));document.dispatchEvent(new Event('slidechange'));};
 // 工具列：滑鼠移動時短暫顯示，2 秒不動就隱藏
 (function(){let tm;const b=document.body;function wake(){b.classList.add('uiwake');b.classList.remove('uiidle');clearTimeout(tm);tm=setTimeout(()=>{b.classList.remove('uiwake');b.classList.add('uiidle');},2000);}
 addEventListener('mousemove',wake,{passive:true});addEventListener('touchstart',wake,{passive:true});})();
-document.querySelectorAll('.slide.t-divider').forEach(sl=>{const n={m1:'01',m2:'02',m3:'03'}[sl.dataset.sec];if(n){const d=document.createElement('div');d.className='dvno';d.textContent=n;sl.querySelector('.inner').prepend(d);}
-  const c=document.createElement('div');c.className='cooc-chip';c.innerHTML='<img src="assets/shots/kuai_logo.png" alt="酷AI">臺北酷課雲 × 酷AI';sl.appendChild(c);});
+document.querySelectorAll('.slide.t-divider').forEach(sl=>{const n=sl.dataset.sec.slice(1);if(/^[1-6]$/.test(n)){const d=document.createElement('div');d.className='dvno';d.textContent='0'+n;sl.querySelector('.inner').prepend(d);}});
 addEventListener('resize',fit);fit();
 {const g=new URLSearchParams(location.search).get('go');if(g)setTimeout(()=>goSec(g),0);}
-if(/g3\.html/.test(location.pathname))document.querySelectorAll('#secchip .g3btn').forEach(b=>b.classList.add('act'));
 const m=decodeURIComponent(location.hash).match(/^#p(.+)$/);const k0=m?slides.findIndex(s=>s.dataset.label===m[1]):0;show(k0<0?0:k0);
 </script>
 <div id="zoom"><img alt=""></div>
@@ -491,106 +506,64 @@ document.addEventListener('click',e=>{const t=e.target;
 addEventListener('keydown',e=>{if(z.classList.contains('on')){e.stopImmediatePropagation();e.preventDefault();z.classList.remove('on');}},true);
 })();
 </script>
+<script>
+(function(){const reduced=matchMedia('(prefers-reduced-motion: reduce)');let animation=0;
+function count(){cancelAnimationFrame(animation);document.querySelectorAll('.stat .big').forEach(el=>{if(el.dataset.value)el.textContent=el.dataset.value;else el.dataset.value=el.textContent;});
+const items=[...document.querySelectorAll('.slide.on .stat .big')].map(el=>{const text=el.dataset.value,m=text.match(/^(?!.*[pP＝=])([^0-9]*)([0-9][0-9,]*(?:\.[0-9]+)?)(.*)$/);if(!m)return null;return {el,text,prefix:m[1],suffix:m[3],target:Number(m[2].replace(/,/g,'')),decimals:(m[2].split('.')[1]||'').length,group:m[2].includes(',')};}).filter(Boolean);
+if(reduced.matches||!items.length)return;let start;function tick(t){if(start===undefined)start=t;const p=Math.min(1,(t-start)/1100),v=1-Math.pow(1-p,3);items.forEach(x=>{if(p===1){x.el.textContent=x.text;return;}let n=(x.target*v).toFixed(x.decimals);if(x.group){const parts=n.split('.');parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,',');n=parts.join('.');}x.el.textContent=x.prefix+n+x.suffix;});if(p<1)animation=requestAnimationFrame(tick);}animation=requestAnimationFrame(tick);}
+document.addEventListener('slidechange',count);count();})();
+</script>
 <script src="assets/vendor/three.min.js"></script>
 <script>
-// three.js 視覺層（載入失敗就不顯示，不影響簡報）
-// 封面／章節／結尾：臺北天際線＋101＋往上飄的酷AI 對話泡泡；內容頁：右上角旋轉的小 101
-(function(){if(!window.THREE)return;
-const cv=document.createElement('canvas');
-cv.style.cssText='position:absolute;inset:0;width:1920px;height:1080px;pointer-events:none;mix-blend-mode:multiply;z-index:0';
-let R;try{R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});}catch(e){return;}
-document.documentElement.classList.add('three');
-R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(1920,1080,false);
-const scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(42,1920/1080,1,3000);cam.position.z=900;
-let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
-const c=document.createElement('canvas');c.width=c.height=64;const x=c.getContext('2d');
-x.beginPath();x.arc(32,32,26,0,7);x.fillStyle='#fff';x.fill();const tex=new THREE.CanvasTexture(c);
-const V=(a,b,c)=>new THREE.Vector3(a,b,c);
-// 每個群組記下自己的材質，方便整組淡入淡出
-function layer(){const g=new THREE.Group();g.mats=[];scene.add(g);
-  g.mat=(m,o)=>{m.transparent=true;m.base=o;m.opacity=0;g.mats.push(m);return m;};
-  g.lines=(arr,color,o)=>{const b=new THREE.BufferGeometry().setFromPoints(arr);const l=new THREE.LineSegments(b,g.mat(new THREE.LineBasicMaterial({color}),o));g.add(l);return l;};
-  g.dots=(arr,color,size,o)=>{const b=new THREE.BufferGeometry().setFromPoints(arr);const m=new THREE.Points(b,g.mat(new THREE.PointsMaterial({color,size,map:tex,alphaTest:.05}),o));g.add(m);return m;};
-  g.a=0;g.fade=(to,k)=>{g.a+=(to-g.a)*k;g.visible=g.a>.01;g.mats.forEach(m=>m.opacity=m.base*g.a);};return g;}
-// 沿線跑的訊號
-function pulses(g,edges,n,color,size){const S=Array.from({length:n},()=>({e:edges[Math.floor(rnd()*edges.length)],t:rnd(),v:.25+rnd()*.5}));
-  const pts=S.map(()=>V(0,0,0)),m=g.dots(pts,color,size,1);
-  return (dt,k)=>{S.forEach((s,i)=>{s.t+=s.v*dt*k;if(s.t>1){s.t=0;s.e=edges[Math.floor(Math.random()*edges.length)];}pts[i].lerpVectors(s.e[0],s.e[1],s.t);});m.geometry.setFromPoints(pts);};}
-
-// ── 1. 節點網路（中央留空給標題）
-const net=layer(),P=[];
-while(P.length<130){const a=(rnd()-.5)*1900,b=(rnd()-.5)*1000,d=(rnd()-.5)*500;if(Math.abs(a)<520&&Math.abs(b)<230)continue;P.push(V(a,b,d));}
-const E=[];P.forEach((a,i)=>{P.map((b,j)=>[a.distanceTo(b),j]).sort((u,v)=>u[0]-v[0]).slice(1,4).forEach(([d,j])=>{if(d<330&&i<j)E.push([P[i],P[j]]);});});
-net.lines(E.flat(),0x6FA8DC,.6);net.dots(P,0x3D7DC8,16,.75);
-const netPulse=pulses(net,E,22,0xF2994A,20);
-
-// ── 2. 臺北 101（低多邊形線框）：封面／章節是天際線大圖，內容頁是右上角小模型
-function make101(g,s,edgeCol){
-  // 臺北 101：玻璃藍綠、有光影；兩個面受光不同，看得出立體
-  const M=(c)=>g.mat(new THREE.MeshLambertMaterial({color:c,flatShading:true}),1);
-  const glass=M(0x9FD3CF),glass2=M(0x7FBFC0),podium=M(0xC9DCE8),cap=M(0xB7D8D4),
-        edge=g.mat(new THREE.LineBasicMaterial({color:edgeCol}),.55),band=g.mat(new THREE.LineBasicMaterial({color:0xFFFFFF}),.7);
-  const tw=new THREE.Group();g.add(tw);let y=0;
-  const put=(rt,rb,h,m,bands)=>{const geo=new THREE.CylinderGeometry(rt*s,rb*s,h*s,4,1);const me=new THREE.Mesh(geo,m);me.position.y=y+h*s/2;me.rotation.y=Math.PI/4;tw.add(me);
-    const l=new THREE.LineSegments(new THREE.EdgesGeometry(geo),edge);l.position.copy(me.position);l.rotation.copy(me.rotation);tw.add(l);
-    for(let k=1;k<=(bands||0);k++){const f=k/(bands+1),r=(rb+(rt-rb)*f)*s+.3,yy=y+h*s*f,P=[];             // 樓層窗帶
-      for(let q=0;q<4;q++){const a=q*Math.PI/2,b=a+Math.PI/2;P.push(new THREE.Vector3(Math.cos(a)*r,yy,Math.sin(a)*r),new THREE.Vector3(Math.cos(b)*r,yy,Math.sin(b)*r));}
-      tw.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(P),band));}
-    y+=h*s;};
-  put(58,62,26,podium,1);                       // 裙樓
-  put(27,37,118,glass2,5);                      // 基座：往上收
-  put(31,31,4,cap);
-  for(let i=0;i<8;i++){put(31,24,44,i%2?glass:glass2,3);put(32,32,3,cap);}   // 八節「花開富貴」：每節往上外擴
-  put(17,23,22,cap,1); put(9,12,22,glass,1);    // 塔頂
-  put(.6,2.6,96,cap);                           // 塔尖
-  const tip=new THREE.Sprite(g.mat(new THREE.SpriteMaterial({map:tex,color:0xF2994A}),.9));tip.scale.set(18*s,18*s,1);tip.position.y=y;tw.add(tip);
-  tw.top=y;return tw;}
-// 光源（只影響有光照材質的 101）
-scene.add(new THREE.AmbientLight(0xffffff,.78));const sun=new THREE.DirectionalLight(0xffffff,.65);sun.position.set(-400,600,500);scene.add(sun);
-// 酷AI 對話泡泡貼圖
-function bubbleTex(txt,bg){const c=document.createElement('canvas');c.width=256;c.height=160;const x=c.getContext('2d');
-  x.fillStyle=bg;x.beginPath();x.roundRect(8,8,240,110,50);x.fill();x.beginPath();x.moveTo(70,112);x.lineTo(54,150);x.lineTo(110,114);x.fill();
-  x.fillStyle='#fff';x.font='900 52px "Noto Sans TC",sans-serif';x.textAlign='center';x.textBaseline='middle';x.fillText(txt,128,64);return new THREE.CanvasTexture(c);}
-const BUB=[['酷AI',0xF0A23B,'#F0A23B'],['AI',0x3B82C4,'#3B82C4'],['?',0x5AA9E6,'#5AA9E6'],['ABC',0xF0A23B,'#F0A23B'],['臺北',0x1E3A6E,'#1E3A6E']].map(b=>bubbleTex(b[0],b[2]));
-
-// 2a. 天際線（封面／章節／結尾）
-const city=layer();city.position.set(0,-345,0);
-const T101=make101(city,.72,0x1F3A6E);T101.position.set(-470,0,40);T101.rotation.y=.42;
-const bx=[],bedge=city.mat(new THREE.LineBasicMaterial({color:0x6FA8DC}),.75),bface=city.mat(new THREE.MeshBasicMaterial({color:0xE7F1FB}),1),farEdge=city.mat(new THREE.LineBasicMaterial({color:0xB9D3EA}),.5),farFace=city.mat(new THREE.MeshBasicMaterial({color:0xF5F9FD}),1);
-for(let i=0;i<34;i++){const w=30+rnd()*60,h=40+rnd()*170,d=30+rnd()*50,x=-760+i*46+rnd()*20;if(Math.abs(x+470)<70)continue;
-  const far=i%2===0,geo=new THREE.BoxGeometry(w,h,d),m=new THREE.Mesh(geo,far?farFace:bface);m.position.set(x,h/2,far?-390:-120);city.add(m);
-  const l=new THREE.LineSegments(new THREE.EdgesGeometry(geo),far?farEdge:bedge);l.position.copy(m.position);city.add(l);bx.push(m.position.clone().add(V(0,h/2,0)));}
-const bubs=Array.from({length:9},(_,i)=>{const sp=new THREE.Sprite(city.mat(new THREE.SpriteMaterial({map:BUB[i%BUB.length]}),.95));
-  sp.scale.set(70,44,1);sp.u={o:bx[Math.floor(rnd()*bx.length)]||V(0,0,0),t:rnd(),v:.05+rnd()*.06};city.add(sp);return sp;});
-const tip=V(-470,T101.top,40),SK=bx.map(p=>[tip,p]).filter((_,i)=>i%3===0);
-city.lines(SK.flat(),0xF2C48A,.35);const skyPulse=pulses(city,SK,10,0xF2994A,16);
-
-// 2b. 右上角小 101（內容頁）＋繞行的酷AI 泡泡
-const hub=layer();hub.position.set(665,235,0);
-const M101=make101(hub,.20,0x1F3A6E);M101.position.y=0;
-const ring=[];for(let i=0;i<=64;i++){const a=i/64*Math.PI*2;ring.push(V(Math.cos(a)*70,0,Math.sin(a)*70));}
-const rg=[];for(let i=0;i<64;i++)rg.push(ring[i],ring[i+1]);const rl=hub.lines(rg,0xF0A23B,.5);rl.position.y=95;
-const hb=new THREE.Sprite(hub.mat(new THREE.SpriteMaterial({map:BUB[0]}),1));hb.scale.set(38,24,1);hub.add(hb);
-const hubPulse=()=>{};
-const motion=matchMedia('(prefers-reduced-motion: reduce)');let still=motion.matches;motion.addEventListener('change',e=>{still=e.matches;});
-let host=null,last=0,full=true,boost=0,pose=0,idx=0;
-function frame(t){requestAnimationFrame(frame);
-  const on=document.querySelector('.slide.on');
-  if(on!==host){host=on;if(!on)return;if(on.classList.contains("t-cover"))on.appendChild(cv);else on.insertBefore(cv,on.firstChild);full=/t-(cover|divider|closing)/.test(on.className);
-    idx=[...on.parentNode.children].indexOf(on);pose=((idx%5)-2)*.13;boost=1;}
-  if(!host)return;const dt=Math.min((t-last)/1000,.05);last=t;const k=still?1:Math.min(1,dt*5);
-  net.fade(full?.55:0,k);city.fade(full?1:0,k);hub.fade(0,k);boost*=1-Math.min(1,dt*1.6);
-  if(!still){net.rotation.y+=(pose+Math.sin(t/9000)*.2-net.rotation.y)*Math.min(1,dt*2.5);net.rotation.x=Math.cos(t/11000)*.1;
-    M101.rotation.y=t/4000;const a=t/1500;hb.position.set(Math.cos(a)*70,95+Math.sin(t/700)*6,Math.sin(a)*70);
-    city.rotation.y=Math.sin(t/12000)*.06;bubs.forEach(b=>{b.u.t+=b.u.v*dt;if(b.u.t>1){b.u.t=0;b.u.o=bx[Math.floor(Math.random()*bx.length)];}b.position.set(b.u.o.x+Math.sin(t/1800+b.u.t*6)*12,b.u.o.y+30+b.u.t*260,b.u.o.z);const scale=1+.07*Math.sin(t/1200+b.u.t*6);b.scale.set(70*scale,44*scale,1);b.material.opacity=.95*Math.sin(b.u.t*Math.PI)*city.a;});}
-  if(still){M101.rotation.y=0;hb.position.set(55,80,0);city.rotation.y=0;net.rotation.set(0,0,0);bubs.forEach(b=>{b.position.set(b.u.o.x,b.u.o.y+30+b.u.t*260,b.u.o.z);b.scale.set(70,44,1);b.material.opacity=.8*city.a;});}
-  const sp=still?0:1+boost*3;if(net.visible)netPulse(dt,sp);if(city.visible)skyPulse(dt,sp);
-  R.render(scene,cam);}
-requestAnimationFrame(frame);})();
+// 共用一個 renderer；只有封面、章節、結尾與功能版圖頁需要繪製。
+(function(){
+  if(!window.THREE)return;
+  const motion=matchMedia('(prefers-reduced-motion: reduce)');
+  let renderer;
+  try{renderer=new THREE.WebGLRenderer({alpha:true,antialias:true});}catch(e){return;}
+  const canvas=renderer.domElement;canvas.className='galaxy-canvas';canvas.setAttribute('aria-hidden','true');
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));
+  const scene=new THREE.Scene(), camera=new THREE.PerspectiveCamera(40,1,1,2000);camera.position.z=850;
+  const group=new THREE.Group();scene.add(group);
+  const colors=[0x3dd8ca,0x60bfff,0xffb66d,0xc49aff,0x879cff,0xf2d379];
+  const core=new THREE.Group();group.add(core);
+  const material=(color,opacity)=>new THREE.MeshBasicMaterial({color,transparent:true,opacity,depthWrite:false});
+  [[0,0,0,55],[-48,-3,0,34],[43,-2,0,37],[-22,29,0,35],[20,32,0,42]].forEach(([x,y,z,r])=>{const m=new THREE.Mesh(new THREE.SphereGeometry(r,20,14),material(0x78e4fa,.32));m.position.set(x,y,z);core.add(m);});
+  const halo=new THREE.Mesh(new THREE.SphereGeometry(93,24,16),material(0x36b9ed,.08));core.add(halo);
+  const nodes=colors.map(c=>{const g=new THREE.Group();const ball=new THREE.Mesh(new THREE.IcosahedronGeometry(20,2),material(c,.95));g.add(ball);const glow=new THREE.Mesh(new THREE.SphereGeometry(32,16,12),material(c,.14));g.add(glow);group.add(g);return g;});
+  const ringPoints=[];for(let i=0;i<=128;i++){const a=i*Math.PI*2/128;ringPoints.push(new THREE.Vector3(Math.cos(a)*260,Math.sin(a)*180,0));}
+  group.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints(ringPoints),new THREE.LineBasicMaterial({color:0x50a8dc,transparent:true,opacity:.32})));
+  const lineGeo=new THREE.BufferGeometry();const lineArray=new Float32Array(6*4*3);lineGeo.setAttribute('position',new THREE.BufferAttribute(lineArray,3));
+  group.add(new THREE.LineSegments(lineGeo,new THREE.LineBasicMaterial({color:0x70d6f5,transparent:true,opacity:.48})));
+  const particles=Array.from({length:18},(_,i)=>{const p=new THREE.Mesh(new THREE.SphereGeometry(i%3===0?4:2.5,8,6),material(colors[i%6],.95));group.add(p);return p;});
+  const starPositions=[];let seed=17;const rand=()=>((seed=seed*16807%2147483647)/2147483647);
+  for(let i=0;i<350;i++)starPositions.push((rand()-.5)*2100,(rand()-.5)*1200,(rand()-.5)*700-180);
+  const starGeo=new THREE.BufferGeometry();starGeo.setAttribute('position',new THREE.Float32BufferAttribute(starPositions,3));
+  const stars=new THREE.Points(starGeo,new THREE.PointsMaterial({color:0x9acbff,size:2.5,transparent:true,opacity:.65}));scene.add(stars);
+  let host=null, stage=null, labels=[], raf=0, start=0, lastTime=0;
+  function frame(t){raf=0;if(!host||document.hidden)return;const elapsed=motion.matches?3:(t-start)/1000;lastTime=t;
+    const map=!!stage, divider=host.classList.contains('t-divider');
+    nodes.forEach((n,i)=>{const angle=i*Math.PI/3-Math.PI/2+(motion.matches?0:elapsed*.10);const entry=motion.matches?1:Math.min(1,Math.max(0,(elapsed-i*.12)/.7));const ease=1-Math.pow(1-entry,3);n.position.set(Math.cos(angle)*260*ease,Math.sin(angle)*180*ease,Math.sin(angle)*35);n.scale.setScalar(divider&&i===+host.dataset.sec.slice(1)-1?1.65:1);if(labels[i]){labels[i].style.left=(50+n.position.x/10)+'%';labels[i].style.top=(50-n.position.y/7.36)+'%';labels[i].style.opacity=String(ease);}});
+    for(let i=0;i<6;i++){const a=nodes[i].position,b=nodes[(i+1)%6].position;lineArray.set([0,0,0,a.x,a.y,a.z,a.x,a.y,a.z,b.x,b.y,b.z],i*12);}lineGeo.attributes.position.needsUpdate=true;
+    particles.forEach((p,i)=>{const a=nodes[i%6].position,b=i%2?nodes[(i+1)%6].position:core.position;const f=motion.matches?.5:(elapsed*.23+i/18)%1;p.position.lerpVectors(a,b,f);});
+    core.scale.setScalar(1+(motion.matches?0:.04*Math.sin(elapsed*1.4)));renderer.render(scene,camera);
+    if(!motion.matches)raf=requestAnimationFrame(frame);
+  }
+  function activate(){if(raf)cancelAnimationFrame(raf);raf=0;host=document.querySelector('.slide.on');stage=host&&host.querySelector('.gx-stage');labels=[];
+    if(!host||(!stage&&!/t-(cover|divider|closing)/.test(host.className))){canvas.remove();return;}
+    try{
+      if(stage){const data=JSON.parse(stage.dataset.galaxy);if(!stage.querySelector('.gx-labels')){const wrap=document.createElement('div');wrap.className='gx-labels';const c=document.createElement('span');c.className='gx-center-label';c.textContent=data.core;wrap.appendChild(c);data.nodes.forEach(text=>{const el=document.createElement('span');el.className='gx-label';el.textContent=text;wrap.appendChild(el);});stage.appendChild(wrap);}labels=[...stage.querySelectorAll('.gx-label')];stage.prepend(canvas);renderer.setSize(720,530,false);camera.aspect=720/530;camera.position.set(0,0,850);group.position.set(0,0,0);group.scale.setScalar(.84);stars.visible=false;}
+      else{host.prepend(canvas);renderer.setSize(1920,1080,false);camera.aspect=1920/1080;camera.position.set(0,0,850);group.position.set(host.classList.contains('t-divider')?120:275,0,0);group.scale.setScalar(host.classList.contains('t-divider')?.65:1.12);stars.visible=true;}
+      camera.updateProjectionMatrix();start=performance.now();frame(start);if(stage)stage.classList.add('webgl-ready');
+    }catch(e){if(stage)stage.classList.remove('webgl-ready');canvas.remove();host=null;}
+  }
+  document.addEventListener('slidechange',activate);document.addEventListener('visibilitychange',()=>{if(document.hidden){if(raf)cancelAnimationFrame(raf);raf=0;}else activate();});
+  motion.addEventListener('change',activate);canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();if(raf)cancelAnimationFrame(raf);if(stage)stage.classList.remove('webgl-ready');canvas.remove();});activate();
+})();
 </script>
 <script>
 // 內容頁左下角：臺北市數位學習中心 × 酷AI 標籤
-(function(){const bar=document.createElement('div');bar.id='tpbar';const BT="臺北酷課雲｜局處長官簡報";bar.innerHTML='<img src="assets/shots/kuai_logo.png" alt="酷AI系統">'+(BT?'<i>'+BT+'</i>':'');
+(function(){const bar=document.createElement('div');bar.id='tpbar';const BT="臺北酷課雲｜局處長官簡報";bar.innerHTML='<img src="assets/shots/cooc_logo.png" alt="臺北酷課雲">'+(BT?'<i>'+BT+'</i>':'');
 let host=null;(function tick(){requestAnimationFrame(tick);const on=document.querySelector('.slide.on');
  if(on!==host){host=on;if(on&&!/t-(cover|closing)/.test(on.className))on.appendChild(bar);else bar.remove();}})();})();
 </script>

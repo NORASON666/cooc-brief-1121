@@ -131,7 +131,10 @@ def render(d):
             return f'{head(d)}<div class="illus"><img class="ill" src="{SHOT}{d["ill_img"]}" alt=""></div>{foot(d)}'
         return f'{head(d)}<div class="illus">{ill(d["ill"])}</div>{foot(d)}'
     if t == "cards":
-        cs = "".join(f'<div class="card"><h3>{e(h)}</h3><p>{e(b)}</p>{f"<div class=note>{e(n)}</div>" if n else ""}</div>' for h, b, n in d["cards"])
+        def card_heading(h):
+            match = re.match(r"^([①②③④⑤⑥])\s*(.*)$", h)
+            return f'<span class="card-badge">{e(match[1])}</span>{e(match[2])}' if match else e(h)
+        cs = "".join(f'<div class="card"><h3>{card_heading(h)}</h3><p>{e(b)}</p>{f"<div class=note>{e(n)}</div>" if n else ""}</div>' for h, b, n in d["cards"])
         return f'{head(d)}<div class="cards c{d["cols"]}">{cs}</div>{foot(d)}'
     if t == "redesign":
         cs = "".join(f'<div class="card rd{i}"><h3>{e(h)}</h3><p>{e(b)}</p>{f"<div class=note>{e(n)}</div>" if n else ""}</div>'
@@ -152,7 +155,12 @@ def render(d):
 <ol class="steps qs">{qs}</ol>{ask}{foot(d)}'''
     if t == "table":
         th = "".join(f"<th>{e(x)}</th>" for x in d["head"])
-        trs = "".join("<tr>" + "".join(f"<td>{e(c)}</td>" for c in r) + "</tr>" for r in d["rows"])
+        def cell(c, i):
+            cls = ""
+            if d["head"][-1] == "增減" and i == len(d["head"]) - 1:
+                cls = ' class="down"' if c.startswith(("−", "-")) else ' class="up"' if c.startswith(("＋", "+")) else ""
+            return f"<td{cls}>{e(c)}</td>"
+        trs = "".join("<tr>" + "".join(cell(c, i) for i, c in enumerate(r)) + "</tr>" for r in d["rows"])
         cls = "tbl compact" if d.get("compact") else "tbl"
         return f'{head(d)}<table class="{cls}"><thead><tr>{th}</tr></thead><tbody>{trs}</tbody></table>{foot(d)}'
     if t == "stats":
