@@ -393,6 +393,14 @@ body.uiidle #bar,body.uiidle #secchip{opacity:0;pointer-events:none}
 .slide.on .bc:nth-child(n) i{animation-delay:calc(var(--d,0)*1s)}
 @keyframes bargrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
 .t-bars .foot{margin-top:70px}
+/* 數據佐證頁 */
+.evgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;flex:1;min-height:0}
+.ev{margin:0;display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 26px #173e5714}
+.ev-img{flex:1;min-height:0;overflow:hidden;background:#f6f9fc;display:flex;align-items:flex-start;justify-content:center}
+.ev-img img{width:100%;height:100%;object-fit:cover;object-position:top;cursor:zoom-in}
+.ev figcaption{font-size:20px;line-height:1.35;padding:10px 14px;color:var(--ink);border-top:1px solid var(--line)}
+.ev figcaption a{color:#1f6fb2;white-space:nowrap}
+.t-evidence .mini101{display:none}
 </style>
 </head>
 <body>
