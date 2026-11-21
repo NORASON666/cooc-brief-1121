@@ -1,0 +1,14 @@
+已使用內建圖片生成工具製作十張插圖，並存入目前資料夾。每張皆為 **PNG、4:3 橫式、1448 × 1086 像素**，保留生成工具輸出的原始尺寸。
+
+| 檔名 | 尺寸 |
+|---|---|
+| [warmup.png](/Volumes/WD2T/Projects/ai-b3-1121/art/warmup.png) | 1448 × 1086 |
+| [six_features.png](/Volumes/WD2T/Projects/ai-b3-1121/art/six_features.png) | 1448 × 1086 |
+| [read_guide.png](/Volumes/WD2T/Projects/ai-b3-1121/art/read_guide.png) | 1448 × 1086 |
+| [group_task.png](/Volumes/WD2T/Projects/ai-b3-1121/art/group_task.png) | 1448 × 1086 |
+| [agent_pipeline.png](/Volumes/WD2T/Projects/ai-b3-1121/art/agent_pipeline.png) | 1448 × 1086 |
+| [before_ai.png](/Volumes/WD2T/Projects/ai-b3-1121/art/before_ai.png) | 1448 × 1086 |
+| [choose_tool.png](/Volumes/WD2T/Projects/ai-b3-1121/art/choose_tool.png) | 1448 × 1086 |
+| [checkout.png](/Volumes/WD2T/Projects/ai-b3-1121/art/checkout.png) | 1448 × 1086 |
+| [traffic_light.png](/Volumes/WD2T/Projects/ai-b3-1121/art/traffic_light.png) | 1448 × 1086 |
+| [seven_risks.png](/Volumes/WD2T/Projects/ai-b3-1121/art/seven_risks.png) | 1448 × 1086 |
