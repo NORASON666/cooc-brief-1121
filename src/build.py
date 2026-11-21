@@ -109,6 +109,11 @@ def render(d):
     if t == "newsimg":
         lis = "".join(f'<li><b>{e(h)}</b><span>{e(b)}</span></li>' for h, b in d["items"])
         return f'{head(d)}<div class="ni"><div class="ni-img"><img src="{SHOT}{d["img"]}" alt=""></div><ol class="ni-steps">{lis}</ol></div>{foot(d)}'
+    if t == "bars":
+        # 逐年長條圖（純 SVG/CSS）：高度依最大值比例；有註記的柱子加標籤
+        mx = max(v for _, v, _ in d["bars"])
+        cols = "".join(f'''<div class="bc{' hl' if n else ''}" style="--h:{max(v / mx * 100, 1.5):.2f}%"><span class="bv">{v:,}</span><i></i><span class="by">{e(y)}</span>{f'<span class="bn">{e(n)}</span>' if n else ''}</div>''' for y, v, n in d["bars"])
+        return f'{head(d)}<div class="bars"><div class="bu">單位：{e(d["unit"])}</div>{cols}</div>{foot(d)}'
     if t == "platform":
         # 平臺專頁：左大截圖（瀏覽器外框＋網址列），右 logo＋關鍵數字＋三重點
         pts = "".join(f"<li>{e(x)}</li>" for x in d["points"])
