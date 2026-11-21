@@ -43,6 +43,18 @@ def head(d):
     return k + t
 
 
+def src_html(src, full=False):
+    # 資料來源：字串，或 [(短標, 完整名稱, 網址), …]；頁面用短標、來源頁用完整名稱；有網址的變成連結
+    if isinstance(src, str):
+        return e(src)
+    parts = []
+    for it in src:
+        sh, fu, u = it
+        t = fu if full else sh
+        parts.append(f'<a href="{html.escape(u)}" target="_blank" rel="noopener">{e(t)} ↗</a>' if u else e(t))
+    return "；".join(parts)
+
+
 def foot(d):
     out = ""
     if d.get("rel"):
@@ -54,7 +66,7 @@ def foot(d):
     if d.get("dls"):
         out += '<div class="dls">' + "".join(f'<a class="dl big" href="{html.escape(h)}" download>⬇ {e(l)}</a>' for h, l in d["dls"]) + "</div>"
     if d.get("src"):
-        out += f'<p class="src">資料來源｜{e(d["src"])}</p>'
+        out += f'<p class="src">資料來源｜{src_html(d["src"])}</p>'
     return out
 
 
@@ -185,7 +197,7 @@ def render(d):
         size = " small" if d.get("small") else (" mid" if d.get("mid") else (" big" if len(d["text"]) <= 220 else ""))
         return f'{head(d)}<div class="prompt code{size}"><button class="copy">複製</button><pre>{html.escape(d["text"])}</pre></div>{foot(d)}'
     if t == "sources":
-        cols = "".join("<ul>" + "".join(f"<li>{e(x)}</li>" for x in c) + "</ul>" for c in d["cols"])
+        cols = "".join("<ul>" + "".join(f"<li>{src_html([x], True)}</li>" for x in c) + "</ul>" for c in d["cols"])
         return f'<div class="kicker">來源</div><h2 class="title"><span>{e(d["title"])}</span></h2><div class="srcs">{cols}</div>'
     raise ValueError(t)
 
