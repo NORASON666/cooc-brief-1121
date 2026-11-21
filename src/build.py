@@ -97,6 +97,11 @@ def render(d):
     if t == "newsimg":
         lis = "".join(f'<li><b>{e(h)}</b><span>{e(b)}</span></li>' for h, b in d["items"])
         return f'{head(d)}<div class="ni"><div class="ni-img"><img src="{SHOT}{d["img"]}" alt=""></div><ol class="ni-steps">{lis}</ol></div>{foot(d)}'
+    if t == "platform":
+        # 平臺專頁：左大截圖（瀏覽器外框＋網址列），右 logo＋關鍵數字＋三重點
+        pts = "".join(f"<li>{e(x)}</li>" for x in d["points"])
+        return f'''{head(d)}<div class="pf"><div class="pf-shot"><div class="pf-bar"><i></i><i></i><i></i><span>{e(d["url"])}</span></div><img src="{SHOT}{d["img"]}" alt=""></div>
+<div class="pf-side"><img class="pf-logo{" dark" if d.get("logo_dark") else ""}" src="{SHOT}{d["logo"]}" alt=""><div class="pf-big">{e(d["big"])}</div><div class="pf-bigl">{e(d["bigl"])}</div><ul>{pts}</ul></div></div>{foot(d)}'''
     if t == "galaxy":
         # 功能版圖：左側四層文字，右側 three.js 星系（核心＋六大服務節點）；WebGL 不可用時顯示節點清單
         rings = "".join(f'<li><b>{e(h)}</b><span>{e(x)}</span></li>' for h, x in d["rings"])
